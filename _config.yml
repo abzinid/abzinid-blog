@@ -1,0 +1,131 @@
+---
+author:
+  bio: "abzinid.com founder and Administrator."
+  email: contact@abzinid.com
+  image: /assets/img/abzinid.jpg
+  job: self-employed
+  name: Abzinid
+autopages:
+  categories:
+    enabled: true
+    layouts:
+      - categories.html
+    permalink: "/category/:category"
+    slugify:
+      mode: ascii
+  collections:
+    enabled: false
+  enabled: true
+  tags:
+    enabled: true
+    layouts:
+      - autopage_tags.html
+    permalink: "/tag/:tag"
+    slugify:
+      mode: ascii
+baseurl: ""
+compress_html:
+  blanklines: false
+  clippings: all
+  comments: all
+  endings: all
+  ignore:
+    envs:
+      - local
+  startings:
+    - html
+    - head
+    - body
+defaults:
+  -
+    scope:
+      path: download
+      type: pages
+    values:
+      layout: oiin
+      permalink: "/link/:basename"
+  -
+    scope:
+      path: categories
+    values:
+      layout: extra
+      permalink: "/category/:basename"
+  -
+    scope:
+      path: _posts
+      type: posts
+    values:
+      comments: true
+      layout: post
+      is_post: true
+      permalink: "/:title"
+  -
+    scope:
+      path: _pages
+      type: pages
+    values:
+      layout: page
+      permalink: "/:basename"
+description: "Popular premium  and free Blogger template and tutorials"
+email: contact@abzinid.com
+exclude:
+  - _disabled
+  - Gemfile
+  - Gemfile.lock
+  - _Git-commands
+  - _drafts
+  - _dls
+  - icons/.read
+  - _includes/ads-350x50.html
+  - _includes/all-valid-main.css
+  - _includes/complete-css.html
+  - _includes/css-last.html
+  - _includes/footer-photo.html
+  - _includes/footer-redirect.html
+  - _includes/header-with-error.html
+  - _includes/head.html
+  - _includes/index.html
+  - _includes/outer-wrap.html
+  - _includes/sidebar-photo.html
+  - _includes/sidebar.html
+  - _includes/download-timer-script.html
+  - _layouts/collections
+  - _layouts/autopage_collection-orignal.html
+  - _layouts/categories.html
+  - _layouts/autopage_cat.html
+  - _layouts/default.html
+  - _layouts/main-edited.html
+  - _layouts/main-extra.html
+  - vendor
+  - .jekyll-cache
+  - .Get
+  - _config2.yml
+include:
+  - _redirects
+locale: en-US
+logo: /assets/img/logo.png
+markdown: kramdown
+name: abzinid.com
+pagination:
+  enabled: true
+  limit: 0
+  per_page: 5
+  permalink: "/:num/"
+  sort_field: date
+  sort_reverse: true
+  title: ":title | :num of :max"
+  trail:
+    after: 2
+    before: 2
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-paginate-v2
+  - jekyll-last-modified-at
+tagline: "Abzinid Tutorial Tips"
+timezone: Asia/Riyadh
+title: "Abzinid Blogger and Tutorials"
+twitter:
+  card: summary_large_image
+  username: abzinid
+url: "https://blog.abzinid.com"
